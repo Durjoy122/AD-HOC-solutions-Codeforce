@@ -13,13 +13,13 @@ int main() {
 	for(int i = 0; i < 2*n; ++i) {
 	    int x, y;
 	    cin >> x >> y;
-	    if(x == 0) mnr.push_back(abs(y));
-	    if(y == 0) mns.push_back(abs(x));
+	    if(x == 0) {
+          mnr.push_back(abs(y));
+	    }
+	    if(y == 0) {
+          mns.push_back(abs(x));
+	    }
 	}
-	for(auto&it : mnr) {
-        cout << it <<" ";
-	}
-	exit(0);
 	sort(mnr.begin(), mnr.end());
 	sort(mns.begin(), mns.end());
 	double res = 0;
@@ -27,8 +27,8 @@ int main() {
         cout << mnr[i] <<" ";
 	    res += sqrt(mnr[i]*mnr[i] + mns[i]*mns[i]);
     }
-     //printf("%.15f\n", res);
-
+     printf("%.15f\n", res);
    }
+   return 0;
 }
 
