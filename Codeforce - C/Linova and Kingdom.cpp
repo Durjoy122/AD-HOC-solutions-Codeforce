@@ -41,6 +41,6 @@ int main() {
     for(int e = 0; e < m; e++) {
         ans += x[e];
     }
-   // cout << ans <<"\n";
+    cout << ans <<"\n";
     return 0;
 }
