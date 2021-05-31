@@ -19,7 +19,6 @@ int main() {
       for(int i = 0; i < n; i++) {
          sum += v[i];
          sum = sum - i;
-         cout << sum <<" ";
          if(sum < 0) {
              ok = false;
              break;
