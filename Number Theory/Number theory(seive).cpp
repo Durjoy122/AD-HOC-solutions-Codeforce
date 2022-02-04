@@ -8,12 +8,11 @@ vector<long long>prime;
 int main() {
     marked[0] = marked[1] = false;
     for(int i = 2;i < M; i++){
-       marked[i]=true;
+       marked[i] = true;
     }
     for (int i = 2; i <= sqrt(M); i++) {
       if (marked[i] == true) { // i is a prime
           for (int j = i * i; j <= M; j += i) {
-               cout << j <<" ";
                marked[j] = false;
           }
        }
